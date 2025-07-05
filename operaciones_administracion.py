@@ -11,7 +11,7 @@ def mostrar_inventario():
 
     print("\nInventario de Gifty:")
     for sku, producto in inventario.items():
-        print(f"SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${producto['precio']}, Cantidad: {producto['cantidad']}")
+        print(f"SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${int(producto['precio'])}, Cantidad: {producto['cantidad']}")
 
 def vender_producto():
     if not inventario:
@@ -43,7 +43,7 @@ def vender_producto():
                         inventario[sku]['cantidad'] -= cantidad_vendida
                         ventas[sku] += cantidad_vendida
                         total_venta = cantidad_vendida * inventario[sku]['precio']
-                        print(f"Venta exitosa. Total a pagar: ${total_venta:.2f}")
+                        print(f"Venta exitosa. Total a pagar: ${total_venta:}")
                         break
                     else:
                         print("Cantidad insuficiente en inventario.")
@@ -86,7 +86,7 @@ def buscar_producto():
 
                 if sku in inventario:
                     producto = inventario[sku]
-                    print(f"\nProducto encontrado: SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${producto['precio']}, Cantidad: {producto['cantidad']}")
+                    print(f"\nProducto encontrado: SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${int(producto['precio'])}, Cantidad: {producto['cantidad']}")
                 else:
                     print("Producto no encontrado.")
 
@@ -113,7 +113,7 @@ def buscar_producto():
                 if encontrados:
                     print("\nProductos encontrados:")
                     for sku, producto in encontrados:
-                        print(f"SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${producto['precio']}, Cantidad: {producto['cantidad']}")
+                        print(f"SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${int(producto['precio'])}, Cantidad: {producto['cantidad']}")
                 else:
                     print("No se encontraron productos con ese nombre.")
 

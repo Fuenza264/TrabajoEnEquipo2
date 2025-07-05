@@ -2,7 +2,7 @@
 
 # Main
 
-from operaciones_modificacion import agregar_producto, actualizar_producto, eliminar_producto
+from operaciones_modificacion import agregar_producto, actualizar_producto, eliminar_producto, actualizar_existencias
 from operaciones_administracion import mostrar_inventario, vender_producto, buscar_producto
 from reportes import generar_reporte
 
@@ -16,11 +16,13 @@ def gestion_tienda():
         print("3. Agregar producto")
         print("4. Actualizar producto")
         print("5. Eliminar producto")
-        print("6. Buscar producto")
-        print("7. Reporte de ventas")
-        print("8. Salir")
+        print("6. Actualizar existencias")
+        print("7. Buscar producto")
+        print("8. Reporte de ventas")
+        print("9. Salir")
 
         opcion = input("Seleccione una opción: ")
+        
 
         if opcion == '1':
             mostrar_inventario()
@@ -33,10 +35,12 @@ def gestion_tienda():
         elif opcion == '5':
             eliminar_producto()
         elif opcion == '6':
-            buscar_producto()
+            actualizar_existencias()
         elif opcion == '7':
-            generar_reporte()
+            buscar_producto()
         elif opcion == '8':
+            generar_reporte()
+        elif opcion == '9':
             break
         else:
             print("Opción no válida. Intente nuevamente.")
