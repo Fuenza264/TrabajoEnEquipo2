@@ -173,7 +173,7 @@ def actualizar_existencias():
 
         elif opcion == '1':
             while True: 
-                sku = input("\nIngrese el SKU del producto a agregar existencia: \n(Si quiere volver al menú de existencias, ingrese 0)\n")
+                sku = input("\nIngrese el SKU del producto a agregar existencias: \n(Si quiere volver al menú de existencias, ingrese 0)\n")
                 if sku == '0':
                     break
 
