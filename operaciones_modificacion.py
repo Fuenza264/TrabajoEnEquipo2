@@ -186,7 +186,7 @@ def actualizar_existencias():
                     continue
 
                 producto = inventario[sku]
-                print(f"\nDatos del producto: SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${int(producto['precio'])}, Cantidad: {producto['cantidad']}")
+                print(f"\nProducto a actualizar: SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${int(producto['precio'])}, Cantidad: {producto['cantidad']}")
 
                 while True:
                     try:
@@ -232,7 +232,7 @@ def actualizar_existencias():
                     continue
 
                 producto = inventario[sku]
-                print(f"\nDatos del producto: SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${int(producto['precio'])}, Cantidad: {producto['cantidad']}")
+                print(f"\nProducto a actualizar: SKU: {sku}, Nombre: {producto['nombre']}, Precio: ${int(producto['precio'])}, Cantidad: {producto['cantidad']}")
 
                 while True:
                     try:
