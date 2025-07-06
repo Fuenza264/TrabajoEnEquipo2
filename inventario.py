@@ -1,6 +1,6 @@
 # Tienda de regalos Gifty - Inventario y registro de ventas
 
-#Inventario y conteo ventas
+# Inventario y conteo ventas
 
 '''
 inventario = {

@@ -1,6 +1,6 @@
 # Tienda de regalos Gifty - Inventario y registro de ventas
 
-# Operacion de administracion
+# Operaciones de administracion
 
 from inventario import inventario, ventas
 
